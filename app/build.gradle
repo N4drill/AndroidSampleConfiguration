@@ -38,6 +38,7 @@ def nav_version = "2.3.0-alpha04"
 def rxjava_version = "2.2.19"
 def rxkotlin_version = "2.4.0"
 def rxandroid_version = "2.1.1"
+def daggerVersion = '2.26'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -63,4 +64,10 @@ dependencies {
 
     //Timber
     implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    //Dagger
+    implementation "com.google.dagger:dagger:$daggerVersion"
+    implementation "com.google.dagger:dagger-android-support:$daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$daggerVersion"
+    kapt "com.google.dagger:dagger-android-processor:$daggerVersion"
 }

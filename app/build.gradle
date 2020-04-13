@@ -39,6 +39,7 @@ def rxjava_version = "2.2.19"
 def rxkotlin_version = "2.4.0"
 def rxandroid_version = "2.1.1"
 def daggerVersion = '2.26'
+def timberVersion = '4.7.1'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -63,7 +64,7 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
 
     //Timber
-    implementation 'com.jakewharton.timber:timber:4.7.1'
+    implementation "com.jakewharton.timber:timber:$timberVersion"
 
     //Dagger
     implementation "com.google.dagger:dagger:$daggerVersion"

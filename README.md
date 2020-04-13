@@ -81,10 +81,7 @@ Application has planted one debugTree in `MainActivity` to simplify logging in a
 * Java vesrsion set as target
 * DataBinding enabled
 * Layout stays as default with ConstraintLayouts
+* Min Android SDK set : 23, Marshmellow (6.0)
 
 # Conclusion
 Copying this project should allow developer to run working sample of application with included all necessary dependencies for modern applications.
-
-# Restrictions
-* Android min SDK : Marshmellow (6.0)
-* Single Activity Application

@@ -13,5 +13,6 @@ class MainActivity : DaggerAppCompatActivity() {
         super.onCreate(savedInstanceState)
         DataBindingUtil.setContentView<MainActivityBinding>(this, R.layout.main_activity)
         Timber.plant(Timber.DebugTree())
+        Timber.d("Application just started")
     }
 }

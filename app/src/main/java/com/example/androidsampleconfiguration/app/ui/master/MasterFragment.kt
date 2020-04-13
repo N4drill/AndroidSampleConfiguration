@@ -5,29 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProviders
-import com.example.androidsampleconfiguration.R
+import androidx.fragment.app.activityViewModels
+import com.example.androidsampleconfiguration.databinding.FragmentMasterBinding
 
 class MasterFragment : Fragment() {
 
-    companion object {
-        fun newInstance() =
-            MasterFragment()
-    }
-
-    private lateinit var viewModel: MasterViewModel
+    private val viewModel: MasterViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        return inflater.inflate(R.layout.fragment_main, container, false)
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(MasterViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
-
+    ): View = FragmentMasterBinding.inflate(inflater, container, false).root
 }

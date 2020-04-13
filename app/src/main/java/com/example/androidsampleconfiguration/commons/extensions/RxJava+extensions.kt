@@ -1,4 +1,4 @@
-package com.example.androidsampleconfiguration.commons
+package com.example.androidsampleconfiguration.commons.extensions
 
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable

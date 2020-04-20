@@ -2,6 +2,7 @@ package com.example.androidsampleconfiguration.app.di
 
 import com.example.androidsampleconfiguration.app.App
 import com.example.androidsampleconfiguration.app.di.builders.ActivityBuilder
+import com.example.androidsampleconfiguration.app.di.modules.AppModule
 import dagger.Component
 import dagger.android.AndroidInjectionModule
 import dagger.android.AndroidInjector
@@ -13,6 +14,7 @@ import javax.inject.Singleton
     modules = [
         AndroidInjectionModule::class,
         AndroidSupportInjectionModule::class,
+        AppModule::class,
         ActivityBuilder::class
     ]
 )
